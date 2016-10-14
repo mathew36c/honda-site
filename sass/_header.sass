@@ -1,0 +1,97 @@
+@import "./vars.sass"
+
+.top-left
+  .logo
+  margin-top: 20px
+  margin-bottom: 30px
+  h3
+    font-weight: 700
+    display: inline-block
+    margin-left: 20px
+.social
+  display: inline
+.top-right
+  margin-top: 20px
+  margin-bottom: 30px
+  float: right
+
+  h3
+    font-weight: 700
+    display: inline-block
+    margin-right: 20px
+  a
+    display: inline-block
+
+.navbar.navbar-default
+  border: none
+  box-shadow: none
+
+  .navbar-collapse
+    border: none
+    box-shadow: none
+
+.navbar-default .container-fluid
+  background-color: $gray
+
+  img
+    height: 35px
+    width: auto
+    margin: 10px 0 10px 10px
+
+.navbar-default .navbar-nav > li > a
+  font-family: $font-stack
+  color: white
+  font-size: 16px
+  padding: 7px 10px
+  display: inline-block
+  margin-top: 10px
+  margin-right: 10px
+  margin-bottom: 10px
+  -webkit-transition: background-color 0.5s
+  transition: background-color 0.5s
+
+  &:hover, &:focus
+    color: white
+    background-color: #181818
+    -webkit-transition: background-color 0.8s
+    transition: background-color 0.5s
+
+.navbar-default .navbar-toggle
+  margin-right: 15px
+  border: none
+  color: white
+  height: 44px
+  width: 42px
+
+  &:hover, &:focus
+    background-color: #181818
+
+  .icon-bar
+    background-color: white
+
+@media screen and (max-width: 320px)
+  .top-right
+    h3
+      font-size: 18px
+
+@media screen and (max-width: 768px)
+  .navbar-default .navbar-nav > li > a
+    border-radius: 0
+    display: block
+    margin: 0 auto
+    padding: 7px 30px
+    text-align: center
+
+    &:hover, &:focus
+      background-color: #181818
+      border-radius: 0
+      color: white
+
+
+@media screen and (max-width: 1000px)
+  .social
+    display: block
+  .top-left
+    display: inline-block
+    h3
+      display: none
